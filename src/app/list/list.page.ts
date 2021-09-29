@@ -17,7 +17,7 @@ export class ListPage implements OnInit {
   }
 
   getData() {
-    this.http.get("http://localhost:8000/api/sales").subscribe((data: any) => {
+    this.http.get("http://localhost:8000/api/products").subscribe((data: any) => {
       this.list = data;
     })
   }
